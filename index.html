@@ -7,6 +7,17 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css" />
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "V0kUjTVg4r0cRXFNm",
+        });
+      })();
+    </script>
   </head>
   <body class="font-sans bg-gray-50 text-gray-800">
     <!-- NAVBAR -->
@@ -608,28 +619,34 @@
           <h2 class="text-4xl font-extrabold text-gray-800 mb-6">
             Send a Message
           </h2>
-          <form
-            action="mailto:mieshlingad0@gmail.com"
-            method="post"
-            enctype="text/plain"
-            class="flex flex-col gap-4"
-          >
+          <form id="contact-form" class="flex flex-col gap-4">
             <input
               type="text"
-              name="Name"
+              id="subject"
+              name="subject"
+              placeholder="Subject"
+              required
+              class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-violet-300"
+            />
+            <input
+              type="text"
+              id="name"
+              name="name"
               placeholder="Your Name"
               required
               class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-violet-300"
             />
             <input
               type="email"
-              name="Email"
+              id="email"
+              name="email"
               placeholder="Your Email"
               required
               class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-violet-300"
             />
             <textarea
-              name="Message"
+              name="message"
+              id="message"
               rows="5"
               placeholder="Your Message"
               required
@@ -650,7 +667,6 @@
     <footer class="bg-gray-800 text-gray-300 text-center py-4">
       <p>&copy; 2025 Mieshellyne Anne Lingad | Portfolio</p>
     </footer>
-
     <script src="index.js"></script>
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script>
