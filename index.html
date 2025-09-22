@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mieshellyne Anne Lingad - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body class="font-sans bg-gray-50 text-gray-800">
+    <!-- NAVBAR -->
+    <header class="fixed w-full bg-white/80 backdrop-blur-md shadow z-50">
+      <div
+        class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between"
+      >
+        <!-- Logo / Name -->
+        <h1
+          class="text-xl font-extrabold text-violet-700 uppercase leading-snug"
+        >
+          MAL
+        </h1>
+
+        <!-- Desktop Menu -->
+        <nav class="hidden md:flex space-x-8 text-gray-700 font-medium">
+          <a href="#experience" class="hover:text-violet-600 transition"
+            >Experience</a
+          >
+          <a href="#portfolio" class="hover:text-violet-600 transition"
+            >Portfolio</a
+          >
+          <a href="#skills" class="hover:text-violet-600 transition">Skills</a>
+          <a href="#contact" class="hover:text-violet-600 transition"
+            >Contact</a
+          >
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <button
+          id="menu-btn"
+          class="md:hidden text-gray-700 focus:outline-none"
+        >
+          <!-- Hamburger Icon -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-7 w-7"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-white/90 backdrop-blur-md shadow-md"
+      >
+        <nav
+          class="flex flex-col items-center space-y-4 py-6 font-medium text-gray-700"
+        >
+          <a href="#about" class="hover:text-violet-600 transition">About</a>
+          <a href="#experience" class="hover:text-violet-600 transition"
+            >Experience</a
+          >
+          <a href="#portfolio" class="hover:text-violet-600 transition"
+            >Portfolio</a
+          >
+          <a href="#skills" class="hover:text-violet-600 transition">Skills</a>
+          <a href="#contact" class="hover:text-violet-600 transition"
+            >Contact</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <!-- <section
+      class="min-h-screen flex flex-col items-center justify-center bg-gradient-to-r from-violet-500 to-purple-700 text-white text-center p-6 pt-32"
+    >
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">
+        Hello, I’m <span class="text-yellow-300">Mieshellyne Anne Lingad</span>
+      </h1>
+      <p class="text-lg md:text-xl mb-6">
+        Clio Administrator | CRM Specialist | Team Leader
+      </p>
+      <a
+        href="#contact"
+        class="px-6 py-3 bg-yellow-400 text-gray-900 rounded-full font-semibold hover:bg-yellow-300 transition"
+      >
+        About Me
+      </a>
+    </section> -->
+
+    <!-- HERO -->
+    <section
+      class="relative min-h-screen flex flex-col items-center justify-center bg-gradient-to-l from-violet-500 to-purple-700 text-white text-center overflow-hidden p-6 pt-32"
+    >
+      <!-- Background decorative shapes -->
+      <div
+        class="absolute top-0 right-10 transform -translate-x-1/2 w-[600px] h-[600px] bg-yellow-300 opacity-10 rounded-full blur-2xl animate-pulse-slow"
+      ></div>
+      <div
+        class="absolute bottom-0 right-10 w-[400px] h-[400px] bg-white opacity-10 rounded-full blur-2xl animate-pulse-slow"
+      ></div>
+
+      <!-- Hero Content -->
+      <h1
+        class="text-4xl md:text-5xl font-extrabold mb-4 drop-shadow-lg animate-fade-in-up"
+      >
+        Hello, I’m <span class="text-yellow-300">Mieshellyne Anne Lingad</span>
+      </h1>
+      <p
+        class="text-lg md:text-xl mb-6 text-gray-100 animate-fade-in-up delay-200"
+      >
+        Clio Administrator | CRM Specialist | Team Leader
+      </p>
+      <a
+        href="#contact"
+        class="px-8 py-4 bg-yellow-400 text-gray-900 rounded-full font-semibold hover:bg-yellow-300 hover:scale-105 transition transform shadow-lg animate-fade-in-up delay-400"
+      >
+        Download My CV
+      </a>
+    </section>
+
+    <!-- ABOUT -->
+    <section
+      id="about"
+      class="relative bg-gray-100 py-20"
+      data-aos="fade-up"
+      data-aos-delay="50"
+    >
+      <div
+        class="max-w-5xl mx-auto px-6 text-center relative z-10"
+        data-aos="fade-up"
+        data-aos-delay="50"
+      >
+        <!-- Decorative Violet Accent -->
+        <div
+          class="absolute top-10 left-10 w-32 h-32 bg-violet-200 rounded-full opacity-30 blur-3xl"
+        ></div>
+        <div
+          class="absolute bottom-10 right-10 w-40 h-40 bg-purple-300 rounded-full opacity-30 blur-3xl"
+        ></div>
+        <!-- Title -->
+        <h2 class="text-4xl md:text-5xl font-extrabold mb-6 text-gray-800">
+          About Me
+        </h2>
+        <!-- Line Under Title -->
+        <div class="w-24 h-1 bg-yellow-400 mx-auto mb-8 rounded-full"></div>
+        <!-- Content Box -->
+        <div
+          class="bg-white shadow-xl rounded-2xl p-8 md:p-12 border border-violet-100"
+        >
+          <p class="text-lg md:text-xl leading-relaxed text-gray-700">
+            I am a
+            <span class="font-semibold text-violet-600"
+              >CRM and Clio Administrator</span
+            >
+            with experience in managing client accounts, training teams, and
+            streamlining processes. With a strong background in
+            <span class="font-semibold text-violet-600"
+              >sales, customer care, and CRM systems</span
+            >, I help law firms and businesses maximize productivity through
+            efficient CRM management and reporting.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section
+      id="experience"
+      class="relative bg-gradient-to-b from-violet-50 via-white to-gray-50 py-20"
+      data-aos="fade-right"
+      data-aos-delay="50"
+    >
+      <div class="max-w-5xl mx-auto px-6 relative z-10">
+        <!-- Title -->
+        <h2
+          class="text-4xl md:text-5xl font-extrabold text-center text-gray-800 mb-6"
+        >
+          Professional Journey
+        </h2>
+        <div class="w-24 h-1 bg-yellow-400 mx-auto mb-12 rounded-full"></div>
+        <!-- Timeline -->
+        <div class="relative border-l-4 border-violet-300 ml-4">
+          <!-- Item 1 -->
+          <div class="mb-10 ml-6">
+            <div
+              class="absolute -left-4 w-8 h-8 bg-violet-500 rounded-full flex items-center justify-center text-white shadow-md"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 13l4 4L19 7"
+                />
+              </svg>
+            </div>
+            <div
+              class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition"
+            >
+              <h3 class="text-xl font-semibold text-violet-700">
+                Clio Administrator
+                <span class="text-sm text-gray-500">(Present)</span>
+              </h3>
+              <p class="text-gray-600 mt-2">
+                Managing Clio CRM workflows, automations, and team training.
+              </p>
+            </div>
+          </div>
+          <!-- Item 2 -->
+          <div class="mb-10 ml-6">
+            <div
+              class="absolute -left-4 w-8 h-8 bg-violet-500 rounded-full flex items-center justify-center text-white shadow-md"
+            >
+              <span class="font-bold">S</span>
+            </div>
+            <div
+              class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition"
+            >
+              <h3 class="text-xl font-semibold text-violet-700">
+                Inbound Sales Team Leader – Sovereign BPO Solutions
+              </h3>
+              <p class="text-sm text-gray-500">2017 – 2019</p>
+              <p class="text-gray-600 mt-2">
+                Coaching, Microsoft 360 reporting, customer care (supervisor
+                calls).
+              </p>
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div class="mb-10 ml-6">
+            <div
+              class="absolute -left-4 w-8 h-8 bg-violet-500 rounded-full flex items-center justify-center text-white shadow-md"
+            >
+              <span class="font-bold">W</span>
+            </div>
+            <div
+              class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition"
+            >
+              <h3 class="text-xl font-semibold text-violet-700">
+                Hotel & Flight Reservation Specialist – WNS
+              </h3>
+              <p class="text-sm text-gray-500">2016 – 2017</p>
+              <p class="text-gray-600 mt-2">
+                Inbound sales and customer care in travel industry.
+              </p>
+            </div>
+          </div>
+          <!-- Item 4 -->
+          <div class="ml-6">
+            <div
+              class="absolute -left-4 w-8 h-8 bg-violet-500 rounded-full flex items-center justify-center text-white shadow-md"
+            >
+              <span class="font-bold">J</span>
+            </div>
+            <div
+              class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition"
+            >
+              <h3 class="text-xl font-semibold text-violet-700">
+                Service Crew (Cashier) – Jollibee
+              </h3>
+              <p class="text-sm text-gray-500">2014 – 2015</p>
+              <p class="text-gray-600 mt-2">
+                Customer service and cashier responsibilities.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section
+      id="portfolio"
+      class="bg-gray-100 py-20"
+      data-aos="fade-left"
+      data-aos-delay="50"
+    >
+      <div class="max-w-6xl mx-auto px-6">
+        <!-- Title -->
+        <h2
+          class="text-4xl md:text-5xl font-extrabold text-center mb-6 text-gray-800"
+        >
+          Portfolio Samples
+        </h2>
+        <div class="w-24 h-1 bg-yellow-400 mx-auto mb-12 rounded-full"></div>
+
+        <!-- Card Grid -->
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Card 1 -->
+          <div
+            class="bg-white rounded-2xl shadow-lg overflow-hidden hover:scale-105 hover:shadow-2xl transition transform cursor-pointer"
+          >
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/906/906324.png"
+              alt="CRM Workflow"
+              class="w-full h-40 object-contain bg-gray-50 p-6"
+            />
+            <div class="p-6">
+              <h4 class="text-lg font-semibold mb-2 text-gray-900">
+                CRM Workflow Example
+              </h4>
+              <p class="text-gray-600 text-sm leading-relaxed">
+                Screenshot of Clio workflow automation (case intake, tasks,
+                etc.).
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="bg-white rounded-2xl shadow-lg overflow-hidden hover:scale-105 hover:shadow-2xl transition transform cursor-pointer"
+          >
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/337/337946.png"
+              alt="Coaching Template"
+              class="w-full h-40 object-contain bg-gray-50 p-6"
+            />
+            <div class="p-6">
+              <h4 class="text-lg font-semibold mb-2 text-gray-900">
+                Coaching Log Template
+              </h4>
+              <p class="text-gray-600 text-sm leading-relaxed">
+                PDF sample of team coaching log with performance metrics.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="bg-white rounded-2xl shadow-lg overflow-hidden hover:scale-105 hover:shadow-2xl transition transform cursor-pointer"
+          >
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/732/732220.png"
+              alt="EOD Report"
+              class="w-full h-40 object-contain bg-gray-50 p-6"
+            />
+            <div class="p-6">
+              <h4 class="text-lg font-semibold mb-2 text-gray-900">
+                End of Day Report (Excel)
+              </h4>
+              <p class="text-gray-600 text-sm leading-relaxed">
+                Sample EOD report created in Microsoft 360 with dashboards.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section
+      id="skills"
+      class="bg-gray-100 py-10"
+      data-aos="fade-down"
+      data-aos-delay="50"
+    >
+      <div class="max-w-6xl mx-auto px-6 text-center">
+        <h2 class="text-4xl md:text-5xl font-extrabold mb-10 text-gray-800">
+          Skills
+        </h2>
+        <div class="w-24 h-1 bg-yellow-400 mx-auto mb-12 rounded-full"></div>
+
+        <div class="overflow-hidden relative p-5">
+          <div class="flex justify-around">
+            <!-- Original images with hover effect -->
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/5968/5968364.png"
+              class="h-20 w-20 object-contain bg-white rounded-xl p-3 shadow-md transform transition duration-300 hover:scale-110 cursor-pointer"
+            />
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/732/732221.png"
+              class="h-20 w-20 object-contain bg-white rounded-xl p-3 shadow-md transform transition duration-300 hover:scale-110 cursor-pointer"
+            />
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/888/888874.png"
+              class="h-20 w-20 object-contain bg-white rounded-xl p-3 shadow-md transform transition duration-300 hover:scale-110 cursor-pointer"
+            />
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/732/732229.png"
+              class="h-20 w-20 object-contain bg-white rounded-xl p-3 shadow-md transform transition duration-300 hover:scale-110 cursor-pointer"
+            />
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/2111/2111615.png"
+              class="h-20 w-20 object-contain bg-white rounded-xl p-3 shadow-md transform transition duration-300 hover:scale-110 cursor-pointer"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section
+      id="contact"
+      class="bg-gray-50 py-20"
+      data-aos="fade-up"
+      data-aos-delay="50"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row gap-12 items-start"
+      >
+        <!-- LEFT: Contact Info -->
+        <div
+          class="md:w-1/2 bg-white rounded-2xl shadow-xl p-10 flex flex-col gap-6 border border-violet-100"
+        >
+          <h2 class="text-4xl font-extrabold text-gray-800">Get in Touch</h2>
+          <p class="text-gray-600 text-lg">
+            Have a question or want to collaborate? Reach out and I’ll get back
+            to you as soon as possible!
+          </p>
+
+          <div class="space-y-3 text-gray-700">
+            <p class="flex items-center gap-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 text-violet-500"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M16 12h2a2 2 0 002-2V7a2 2 0 00-2-2h-2m-4 10h4m-4 0v4m0-4H8m4 0V8"
+                />
+              </svg>
+              <strong>Email:</strong>
+              <a
+                href="mailto:mieshlingad0@gmail.com"
+                class="text-violet-600 hover:underline"
+                >mieshlingad0@gmail.com</a
+              >
+            </p>
+            <p class="flex items-center gap-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 text-violet-500"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 5h18M9 3v2M15 3v2M4 7h16v14H4V7z"
+                />
+              </svg>
+              <strong>Phone:</strong> 0995-145-2304
+            </p>
+            <p class="flex items-center gap-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 text-violet-500"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17.657 16.657L13 21l-1.414-1.414a8 8 0 010-11.314l1.414-1.414a8 8 0 0111.314 0L21 13l-3.343 3.657"
+                />
+              </svg>
+              <strong>Location:</strong> Tondo, Manila
+            </p>
+          </div>
+
+          <a
+            href="https://www.linkedin.com/"
+            target="_blank"
+            class="mt-6 inline-block px-6 py-3 bg-violet-500 text-white font-semibold rounded-full hover:bg-violet-600 transition text-center"
+          >
+            LinkedIn Profile
+          </a>
+        </div>
+
+        <!-- RIGHT: Contact Form -->
+        <div
+          class="md:w-1/2 bg-white rounded-2xl shadow-xl p-10 border border-violet-100"
+        >
+          <h2 class="text-4xl font-extrabold text-gray-800 mb-6">
+            Send a Message
+          </h2>
+          <form
+            action="mailto:mieshlingad0@gmail.com"
+            method="post"
+            enctype="text/plain"
+            class="flex flex-col gap-4"
+          >
+            <input
+              type="text"
+              name="Name"
+              placeholder="Your Name"
+              required
+              class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-violet-300"
+            />
+            <input
+              type="email"
+              name="Email"
+              placeholder="Your Email"
+              required
+              class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-violet-300"
+            />
+            <textarea
+              name="Message"
+              rows="5"
+              placeholder="Your Message"
+              required
+              class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-violet-300"
+            ></textarea>
+            <button
+              type="submit"
+              class="mt-2 bg-violet-500 text-white font-semibold py-3 rounded-full hover:bg-violet-600 transition"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-800 text-gray-300 text-center py-4">
+      <p>&copy; 2025 Mieshellyne Anne Ferrer | Portfolio</p>
+    </footer>
+
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000, // animation duration
+        once: true, // animate only once
+        mirror: false, // animation on scroll up
+      });
+    </script>
+  </body>
+</html>
